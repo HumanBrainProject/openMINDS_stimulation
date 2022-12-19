@@ -1,0 +1,12 @@
+{
+  "_type": "https://openminds.ebrains.eu/stimulation/EphysStimulus",
+  "_extends": "/stimulus/Stimulus.schema.tpl.json",
+  "properties": {
+    "stimulusType": {
+      "_instruction": "Add the type of the electerical stimulus.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/controlledTerms/ElectericalStimulusType"
+      ]
+    }
+  }
+}

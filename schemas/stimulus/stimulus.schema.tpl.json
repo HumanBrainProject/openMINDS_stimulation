@@ -1,0 +1,49 @@
+{
+  "required": [
+    "internalIdentifier"
+  ],
+  "properties": {
+    "deliveredBy": {
+      "_instruction": "Add the device used to deliver this stimulus.",
+      "_linkedCategories": [
+        "deviceUsage"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "_instruction": "Enter a description for this stimulus."
+    },
+    "epoch": {
+      "_instruction": "Total epoch length of this stimulus.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "generatedBy": {
+      "_instruction": "Add the device used to generate this stimulus.",
+      "_linkedCategories": [
+        "deviceUsage"
+      ]
+    },
+    "internalIdentifier": {
+      "type": "string",
+      "_instruction": "Enter the label that was used to identify the stimulus within the data."
+    },
+    "lookupLabel": {
+      "type": "string",
+      "_instruction": "Enter a lookup label for this stimulus that may help you to more easily find it again."
+    },
+    "specification": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "_instruction": "Add all stimulus specifications.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/File",
+        "https://openminds.ebrains.eu/core/FileBundle",
+        "https://openminds.ebrains.eu/core/PropertyValueList",
+        "https://openminds.ebrains.eu/core/Configuration"
+      ]
+    }
+  }
+}

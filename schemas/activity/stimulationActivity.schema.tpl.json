@@ -1,0 +1,47 @@
+{
+  "_type": "https://openminds.ebrains.eu/stimulation/stimulationActivity",
+  "_extends": "/core/schemas/research/experimentalActivity.schema.tpl.json",
+  "required": [
+    "stimulus"
+  ],
+  "properties": {
+    "input": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "_instruction": "Add all specimens that were stimulated within this stimulation activity.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/TissueSampleCollectionState",
+        "https://openminds.ebrains.eu/core/TissueSampleState",
+        "https://openminds.ebrains.eu/core/SubjectGroupState",
+        "https://openminds.ebrains.eu/core/SubjectState"
+      ]
+    },
+    "output": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "_instruction": "Add all specimens that were resulted by this stimulation activity.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/TissueSampleCollectionState",
+        "https://openminds.ebrains.eu/core/TissueSampleState",
+        "https://openminds.ebrains.eu/core/SubjectGroupState",
+        "https://openminds.ebrains.eu/core/SubjectState"
+      ]
+    },
+    "setup": {
+      "_instruction": "Add the setup used for this stimulation.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/Setup"
+      ]
+    },
+    "stimulus": {
+      "type": "array",
+      "minItems": 1,
+      "_linkedCategories": [
+        "stimulus"
+      ],
+      "_instruction": "Add the stimulus used in this activity."
+    }
+  }
+}
