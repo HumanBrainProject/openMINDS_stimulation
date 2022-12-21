@@ -3,9 +3,9 @@
   "_extends": "/stimulus/stimulus.schema.tpl.json",
   "properties": {
     "stimulusType": {
-      "_instruction": "Add the type of the electerical stimulus.",
+      "_instruction": "Add the type of the electrical stimulus.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/ElectericalStimulusType"
+        "https://openminds.ebrains.eu/controlledTerms/ElectricalStimulusType"
       ]
     }
   }
