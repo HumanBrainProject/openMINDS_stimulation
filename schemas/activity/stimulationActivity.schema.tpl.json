@@ -2,46 +2,47 @@
   "_type": "https://openminds.ebrains.eu/stimulation/StimulationActivity",
   "_extends": "/core/schemas/research/experimentalActivity.schema.tpl.json",
   "required": [
-    "stimulus"
+    "stimulusType"
   ],
   "properties": {
     "input": {
       "type": "array",
       "minItems": 1,
       "uniqueItems": true,
-      "_instruction": "Add all specimens that were stimulated within this stimulation activity.",
-      "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/TissueSampleCollectionState",
-        "https://openminds.ebrains.eu/core/TissueSampleState",
+      "_instruction": "Add all states of the specimen(s) that are being stimulated during this activity.",
+      "_linkedTypes": [        
         "https://openminds.ebrains.eu/core/SubjectGroupState",
-        "https://openminds.ebrains.eu/core/SubjectState"
+        "https://openminds.ebrains.eu/core/SubjectState",
+        "https://openminds.ebrains.eu/core/TissueSampleCollectionState",
+        "https://openminds.ebrains.eu/core/TissueSampleState"
       ]
     },
     "output": {
       "type": "array",
       "minItems": 1,
       "uniqueItems": true,
-      "_instruction": "Add all specimens that were resulted by this stimulation activity.",
-      "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/TissueSampleCollectionState",
-        "https://openminds.ebrains.eu/core/TissueSampleState",
+      "_instruction": "Add all states of the specimen(s) that were stimulated as a result of this activity.",
+      "_linkedTypes": [       
         "https://openminds.ebrains.eu/core/SubjectGroupState",
-        "https://openminds.ebrains.eu/core/SubjectState"
+        "https://openminds.ebrains.eu/core/SubjectState",
+        "https://openminds.ebrains.eu/core/TissueSampleCollectionState",
+        "https://openminds.ebrains.eu/core/TissueSampleState"
       ]
     },
     "setup": {
-      "_instruction": "Add the setup used for this stimulation.",
+      "_instruction": "Add the setup used during this stimulation activity.",
       "_linkedTypes": [
         "https://openminds.ebrains.eu/core/Setup"
       ]
     },
-    "stimulus": {
+    "stimulusType": {
       "type": "array",
-      "minItems": 1,
+      "minItems": 1,     
+      "uniqueItems": true,
+      "_instruction": "Add all stimulus types used during this activity.",
       "_linkedCategories": [
-        "stimulus"
-      ],
-      "_instruction": "Add the stimulus used in this activity."
+        "stimulusType"
+      ]
     }
   }
 }
