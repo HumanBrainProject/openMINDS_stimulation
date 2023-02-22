@@ -2,8 +2,8 @@
   "_type": "https://openminds.ebrains.eu/stimulation/EphysStimulus",
   "_extends": "/stimulus/stimulus.schema.tpl.json",
   "properties": {
-    "stimulusType": {
-      "_instruction": "Add the type of the electrical stimulus.",
+    "type": {
+      "_instruction": "Add the type that describe this electrical stimulus.",
       "_linkedTypes": [
         "https://openminds.ebrains.eu/controlledTerms/ElectricalStimulusType"
       ]
