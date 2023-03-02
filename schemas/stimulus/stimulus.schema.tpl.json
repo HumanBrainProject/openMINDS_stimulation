@@ -1,4 +1,7 @@
 {
+  "_categories": [
+    "stimulus"
+  ],
   "required": [
     "internalIdentifier"
   ],
