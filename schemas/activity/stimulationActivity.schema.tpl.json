@@ -2,7 +2,7 @@
   "_type": "https://openminds.ebrains.eu/stimulation/StimulationActivity",
   "_extends": "/core/schemas/research/experimentalActivity.schema.tpl.json",
   "required": [
-    "stimulusType"
+    "stimulus"
   ],
   "properties": {
     "input": {
@@ -35,13 +35,13 @@
         "https://openminds.ebrains.eu/core/Setup"
       ]
     },
-    "stimulusType": {
+    "stimulus": {
       "type": "array",
       "minItems": 1,     
       "uniqueItems": true,
-      "_instruction": "Add all stimulus types used during this activity.",
+      "_instruction": "Add all stimuli used during this activity.",
       "_linkedCategories": [
-        "stimulusType"
+        "stimulus"
       ]
     }
   }
