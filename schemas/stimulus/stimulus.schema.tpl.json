@@ -19,7 +19,7 @@
     "epoch": {
       "_instruction": "Enter the total epoch length of this stimulus.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
+        "/core/QuantitativeValue"
       ]
     },
     "generatedBy": {
@@ -42,10 +42,10 @@
       "uniqueItems": true,
       "_instruction": "Add the specification information for this stimulus.",
       "_linkedTypes": [        
-        "https://openminds.ebrains.eu/core/Configuration",
-        "https://openminds.ebrains.eu/core/File",
-        "https://openminds.ebrains.eu/core/FileBundle",
-        "https://openminds.ebrains.eu/core/PropertyValueList"
+        "/core/Configuration",
+        "/core/File",
+        "/core/FileBundle",
+        "/core/PropertyValueList"
       ]
     }
   }
