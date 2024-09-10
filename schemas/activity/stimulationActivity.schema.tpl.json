@@ -1,5 +1,5 @@
 {
-  "_type": "/stimulation/StimulationActivity",
+  "_type": "StimulationActivity",
   "_extends": "/core/schemas/research/experimentalActivity.schema.tpl.json",
   "required": [
     "stimulus"
@@ -11,10 +11,10 @@
       "uniqueItems": true,
       "_instruction": "Add all states of the specimen(s) that are being stimulated during this activity.",
       "_linkedTypes": [        
-        "/core/SubjectGroupState",
-        "/core/SubjectState",
-        "/core/TissueSampleCollectionState",
-        "/core/TissueSampleState"
+        "SubjectGroupState",
+        "SubjectState",
+        "TissueSampleCollectionState",
+        "TissueSampleState"
       ]
     },
     "output": {
@@ -23,18 +23,18 @@
       "uniqueItems": true,
       "_instruction": "Add all states of the specimen(s) that were stimulated as a result of this activity, and all files or file bundles generated.",
       "_linkedTypes": [
-        "/core/File",
-        "/core/FileBundle",
-        "/core/SubjectGroupState",
-        "/core/SubjectState",
-        "/core/TissueSampleCollectionState",
-        "/core/TissueSampleState"
+        "File",
+        "FileBundle",
+        "SubjectGroupState",
+        "SubjectState",
+        "TissueSampleCollectionState",
+        "TissueSampleState"
       ]
     },
     "setup": {
       "_instruction": "Add the setup used during this stimulation activity.",
       "_linkedTypes": [
-        "/core/Setup"
+        "Setup"
       ]
     },
     "stimulus": {

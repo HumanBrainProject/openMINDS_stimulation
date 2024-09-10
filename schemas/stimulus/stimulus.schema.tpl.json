@@ -19,7 +19,7 @@
     "epoch": {
       "_instruction": "Enter the total epoch length of this stimulus.",
       "_embeddedTypes": [
-        "/core/QuantitativeValue"
+        "QuantitativeValue"
       ]
     },
     "generatedBy": {
@@ -42,10 +42,10 @@
       "uniqueItems": true,
       "_instruction": "Add the specification information for this stimulus.",
       "_linkedTypes": [        
-        "/core/Configuration",
-        "/core/File",
-        "/core/FileBundle",
-        "/core/PropertyValueList"
+        "Configuration",
+        "File",
+        "FileBundle",
+        "PropertyValueList"
       ]
     }
   }
