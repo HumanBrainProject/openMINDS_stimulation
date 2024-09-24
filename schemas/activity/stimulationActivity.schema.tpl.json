@@ -1,5 +1,5 @@
 {
-  "_type": "https://openminds.ebrains.eu/stimulation/StimulationActivity",
+  "_type": "stimulation:StimulationActivity",
   "_extends": "/core/schemas/research/experimentalActivity.schema.tpl.json",
   "required": [
     "stimulus"
@@ -11,10 +11,10 @@
       "uniqueItems": true,
       "_instruction": "Add all states of the specimen(s) that are being stimulated during this activity.",
       "_linkedTypes": [        
-        "https://openminds.ebrains.eu/core/SubjectGroupState",
-        "https://openminds.ebrains.eu/core/SubjectState",
-        "https://openminds.ebrains.eu/core/TissueSampleCollectionState",
-        "https://openminds.ebrains.eu/core/TissueSampleState"
+        "core:SubjectGroupState",
+        "core:SubjectState",
+        "core:TissueSampleCollectionState",
+        "core:TissueSampleState"
       ]
     },
     "output": {
@@ -23,18 +23,18 @@
       "uniqueItems": true,
       "_instruction": "Add all states of the specimen(s) that were stimulated as a result of this activity, and all files or file bundles generated.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/File",
-        "https://openminds.ebrains.eu/core/FileBundle",
-        "https://openminds.ebrains.eu/core/SubjectGroupState",
-        "https://openminds.ebrains.eu/core/SubjectState",
-        "https://openminds.ebrains.eu/core/TissueSampleCollectionState",
-        "https://openminds.ebrains.eu/core/TissueSampleState"
+        "core:File",
+        "core:FileBundle",
+        "core:SubjectGroupState",
+        "core:SubjectState",
+        "core:TissueSampleCollectionState",
+        "core:TissueSampleState"
       ]
     },
     "setup": {
       "_instruction": "Add the setup used during this stimulation activity.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/Setup"
+        "core:Setup"
       ]
     },
     "stimulus": {
